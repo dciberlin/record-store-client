@@ -5,11 +5,13 @@ import Dashboard from './Dashboard';
 import Login from './Login';
 import SignUp from './SignUp';
 import Home from './Home';
+import Navigation from './Navigation';
 
 function App() {
   return (
     <div id="app">
       <BrowserRouter>
+        <Navigation></Navigation>
         <Switch>
           <Route path="/dashboard">
             <Dashboard />
