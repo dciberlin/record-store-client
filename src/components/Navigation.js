@@ -45,18 +45,18 @@ function Navigation() {
           </NavLink>
         </div>
         <div className="menu-item" onClick={toggleSidebar}>
-          <Link>
+          <Link to="">
             <FontAwesomeIcon icon={faRecordVinyl} />
             About Us
           </Link>
         </div>
         <div className="menu-item" onClick={toggleSidebar}>
-          <Link>
+          <Link to="">
             <FontAwesomeIcon icon={faBlenderPhone} />
             Contact
           </Link>
         </div>
-        <div class="divider"></div>
+        <div className="divider"></div>
         <div className="menu-item" onClick={toggleSidebar}>
           <NavLink to="/login" activeStyle={active}>
             <FontAwesomeIcon icon={faUserInjured} />
@@ -69,7 +69,7 @@ function Navigation() {
             Sign up
           </NavLink>
         </div>
-        <div class="divider"></div>
+        <div className="divider"></div>
         <div className="menu-item social">
           <FontAwesomeIcon icon={faFacebook} />
           <FontAwesomeIcon icon={faInstagram} />
