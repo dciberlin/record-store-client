@@ -122,6 +122,28 @@ body,
       }
     }
   }
+  #error {
+    section {
+      height: 100vh;
+      padding: 0 100px;
+    }
+    .left {
+      color: white;
+      padding: 20px;
+      h1 {
+        font-size: 3em;
+      }
+      h3 {
+        font-size: 1.5em;
+      }
+    }
+    .right {
+      img {
+        width: 80%;
+        margin-left: 50px;
+      }
+    }
+  }
   #home {
     section {
       height: 100vh;

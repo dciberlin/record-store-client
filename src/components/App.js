@@ -6,6 +6,7 @@ import Login from './Login';
 import SignUp from './SignUp';
 import Home from './Home';
 import Navigation from './Navigation';
+import NotFound from './NotFound.js';
 
 function App() {
   return (
@@ -13,18 +14,11 @@ function App() {
       <BrowserRouter>
         <Navigation></Navigation>
         <Switch>
-          <Route path="/dashboard">
-            <Dashboard />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/signup">
-            <SignUp />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
+          <Route exact path="/dashboard" component={Dashboard} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/signup" component={SignUp} />
+          <Route exact path="/" component={Home} />
+          <Route path="*" component={NotFound} />
         </Switch>
       </BrowserRouter>
     </div>
