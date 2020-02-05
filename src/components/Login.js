@@ -7,7 +7,7 @@ class Login extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: 'babylon@dci.edu',
+      email: 'babylonq@dci.edu',
       password: '1234567890'
     };
 
@@ -50,7 +50,7 @@ class Login extends React.Component {
                   id="email"
                   required
                 />
-                <label for="email">Email</label>
+                <label htmlFor="email">Email</label>
               </div>
               <div className="row flex-revcol-left">
                 <input
@@ -61,7 +61,7 @@ class Login extends React.Component {
                   id="password"
                   required
                 />
-                <label for="password">Password</label>
+                <label htmlFor="password">Password</label>
               </div>
               <input type="submit" value="Submit" />
             </form>
