@@ -8,7 +8,8 @@ export const checkCredentials = async data => {
         body: JSON.stringify(data),
         headers: {
           'Content-Type': 'application/json'
-        }
+        },
+        credentials: 'include'
       })
     ).json();
 
