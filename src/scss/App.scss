@@ -3,6 +3,9 @@ $color2: #002443;
 $color3: #005678;
 $color4: #114b5f;
 $color5: #028090;
+
+@import "BabylonStrap";
+
 * {
   font-family: "Oswald", sans-serif;
   box-sizing: border-box;
@@ -16,122 +19,6 @@ body,
   margin: 0;
   background-color: $color5;
 }
-
-/***** GENERAL REUSABLE CLASSES *****/
-
-#root {
-  a {
-    color: white;
-    text-decoration: none;
-  }
-
-  .divider {
-    border-bottom: 1px solid white;
-    margin: 20px 0;
-  }
-  // DIVIDE YOUR CSS LIKE NOW
-  #app {
-    height: 100%;
-    width: 100%;
-    h1 {
-      margin-bottom: 30px;
-    }
-    form {
-      .row {
-        margin-bottom: 50px;
-        position: relative;
-        label {
-          position: absolute;
-          top: 0;
-          transition: all 200ms;
-          opacity: 0.5;
-        }
-        input:focus ~ label,
-        input:valid ~ label {
-          font-size: 75%;
-          transform: translate3d(0, -100%, 0);
-          opacity: 1;
-        }
-        input {
-          width: 100%;
-          color: white;
-          border: none;
-          background-color: transparent;
-          padding: 10px 0;
-          border-bottom: 1px solid white;
-          &:focus {
-            outline: none;
-          }
-        }
-      }
-
-      input[type="submit"] {
-        background-color: $color5;
-        border: 0;
-        color: white;
-        padding: 10px 25px;
-        border-radius: 40px;
-      }
-    }
-    .page {
-      height: 100%;
-      width: 100%;
-      padding: 80px 20px;
-      color: white;
-    }
-    .flex-row-center {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
-    .flex-col-left {
-      display: flex;
-      flex-direction: column;
-      justify-content: left;
-      align-items: flex-start;
-    }
-    .flex-revcol-left {
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: left;
-      align-items: flex-start;
-    }
-    .flex-row-space-between {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .navColor {
-      background-color: $color2;
-    }
-    .secColor {
-      background-color: $color1;
-    }
-    .thirdColor {
-      background-color: $color3;
-    }
-    .fourthColor {
-      background-color: $color4;
-    }
-    .fifthColor {
-      background-color: $color5;
-    }
-    .slide-right {
-      transform: translateX(0%);
-    }
-    .fifty {
-      width: 50%;
-    }
-    .seventy {
-      width: 70%;
-    }
-    .thirty {
-      width: 30%;
-    }
-  }
-}
-/************************************/
 
 #app {
   #login {
