@@ -21,6 +21,11 @@ const mainReducer = (state = initialState, action) => {
     return Object.assign({}, state);
   }
 
+  if (action.type === 'HANDLE_LOGOUT') {
+    state.isLoggedIn = false;
+    return Object.assign({}, state);
+  }
+
   return state;
 };
 
