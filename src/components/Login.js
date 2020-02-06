@@ -33,11 +33,13 @@ class Login extends React.Component {
   }
 
   render() {
-    const status = this.props.isLoggedIn;
+    const isLoggedIn = this.props.isLoggedIn;
 
     return (
       <>
-        {!status ? (
+        {isLoggedIn ? (
+          <Redirect to="/dashboard" />
+        ) : (
           <div id="login" className="page thirdColor">
             <h1>Login</h1>
             <form onSubmit={this.handleSubmit}>
@@ -66,8 +68,6 @@ class Login extends React.Component {
               <input type="submit" value="Submit" />
             </form>
           </div>
-        ) : (
-          <Redirect to="/dashboard" />
         )}
       </>
     );
