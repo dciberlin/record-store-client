@@ -17,7 +17,6 @@ class App extends React.Component {
   }
 
   render() {
-    const isLoggedIn = this.props.isLoggedIn;
     const loading = this.props.loading;
 
     return (
