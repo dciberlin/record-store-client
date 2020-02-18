@@ -22,9 +22,6 @@ class Login extends React.Component {
     this.setState({
       [name]: value
     });
-
-    // if (name === 'email') this.setState({ email: e.target.value });
-    // else if (name === 'password') this.setState({ password: e.target.value });
   }
 
   handleSubmit(e) {

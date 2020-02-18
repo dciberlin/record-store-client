@@ -1,4 +1,9 @@
-import { checkCredentials, getRecords, authoriseUser } from '../lib/helpers.js';
+import {
+  checkCredentials,
+  getRecords,
+  authoriseUser,
+  handleLogOut
+} from '../lib/helpers.js';
 
 export const auth = payload => {
   return async dispatch => {
@@ -21,9 +26,12 @@ export const handleLogin = payload => {
 };
 
 export const logOut = payload => {
-  return {
-    type: 'HANDLE_LOGOUT',
-    payload
+  return async dispatch => {
+    const data = await handleLogOut();
+    dispatch({
+      type: 'HANDLE_LOGOUT',
+      payload
+    });
   };
 };
 

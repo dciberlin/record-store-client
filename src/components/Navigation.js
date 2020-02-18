@@ -33,6 +33,7 @@ const Navigation = props => {
     props.logOut();
     props.history.push('/');
   };
+
   const active = {
     color: '#6bc774'
   };
@@ -81,7 +82,7 @@ const Navigation = props => {
         <div className="divider"></div>
         {status && (
           <div className="menu-item" onClick={handleLogOut}>
-            <NavLink to="/login" activeStyle={active}>
+            <NavLink to="" activeStyle={active}>
               <FontAwesomeIcon icon={faBaby} />
               Log out
             </NavLink>

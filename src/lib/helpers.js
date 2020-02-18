@@ -54,3 +54,21 @@ export const authoriseUser = async data => {
     return [];
   }
 };
+
+export const handleLogOut = async data => {
+  try {
+    const res = await (
+      await fetch(`${url}/users/logout`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        credentials: 'include'
+      })
+    ).json();
+
+    return res;
+  } catch (error) {
+    return [];
+  }
+};
